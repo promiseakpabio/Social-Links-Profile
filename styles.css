@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf");
+}
+
+/* RESET */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 8%);
+  color: white;
+  font-size: 14px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter';
+  font-weight: 700;
+  padding: 20px;
+}
+
+/* MAIN CONTAINER */
+.main {
+  width: 100%;
+  max-width: 390px;
+  background-color: hsl(0, 0%, 12%);
+  padding: 40px 20px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* IMAGE */
+.main img {
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  object-fit: cover;
+}
+
+/* TEXTS */
+.main h2 {
+  margin-top: 15px;
+  font-size: 1.4rem;
+}
+
+.main h5 {
+  color: hsl(75, 94%, 57%);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.main p {
+  font-weight: 400;
+  margin: 15px 0;
+  text-align: center;
+}
+
+/* LINKS */
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+li {
+  background-color: hsl(0, 0%, 20%);
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 0;
+  font-weight: 600;
+}
+
+li:hover {
+  color: hsl(0, 0%, 8%);
+  background-color: hsl(75, 94%, 57%);
+  cursor: pointer;
+}
+
+/* 📱 MEDIA QUERY (Mobile) */
+@media (max-width: 480px) {
+  .main {
+    max-width: 95%;
+    padding: 30px 15px;
+  }
+
+  .main img {
+    height: 70px;
+    width: 70px;
+  }
+
+  li {
+    font-size: 0.9rem;
+  }
+}
+
+/* 💻 MEDIA QUERY (Tablet) */
+@media (max-width: 768px) {
+  body {
+    padding: 30px;
+  }
+}
